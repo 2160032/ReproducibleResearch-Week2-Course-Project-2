@@ -1,7 +1,7 @@
 ---
 title: "PA1_template.Rmd"
 author: "Moon jeounghoon"
-date: "2016³â 12¿ù 23ÀÏ"
+date: "2016ë…„ 12ì›” 23ì¼"
 output:
   html_document: default
   word_document: default
@@ -251,11 +251,11 @@ steps_median_new <- median(new_steps_per_day$steps, na.rm=TRUE)
 The new mean and the median of the total number of steps taken per day are 1.0766189 &times; 10<sup>4</sup> and 1.0766189 &times; 10<sup>4</sup>. The outliers are gone so the mean and the median are closer.
 
 ## Are there differences in activity patterns between weekdays and weekends?
-1. Create a new factor variable in the dataset with two levels ??? ¡°weekday¡± and ¡°weekend¡± indicating whether a given date is a weekday or weekend day.
+1. Create a new factor variable in the dataset with two levels ??? â€œweekdayâ€ and â€œweekendâ€ indicating whether a given date is a weekday or weekend day.
 
 
 ```r
-newdata$weekdayType <- ifelse(weekdays(newdata$date) %in% c("Åä¿äÀÏ", "ÀÏ¿äÀÏ"), 
+newdata$weekdayType <- ifelse(weekdays(newdata$date) %in% c("é…å¤¸è€", "è€å¤¸è€"), 
 "weekend", "weekday")
 
 head(newdata)
